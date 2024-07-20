@@ -1,9 +1,9 @@
 body{
-    background-color:blanchedalmond;
+    background-color:#997570;
     font-family:verdana, sans-serif;
 }
 
-header{background-color:chocolate;
+header{background-color:grey;
 }
 
 h1{color: white;
@@ -14,7 +14,7 @@ p{
 }
 
 section {
-    background-color:chocolate;
+    background-color:grey;
     font-family:verdana;
     color:white;
     font-size:20px;
@@ -24,3 +24,37 @@ footer{
     font-family:verdana;
     color:white;
 }
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+/* Horizontal Navigation List Styles */
+
+nav.horizontalNavigation > ul > li {
+   display: block;
+    text-align-last:center;
+   float: center;
+}
+
+nav.horizontalNavigation a {
+   background-color:black;
+   display: block;
+   font-family: verdana
+   line-height: 1.8em;
+   text-align: center;
+}  
+
+nav.horizontalNavigation a:link, 
+nav.horizontalNavigation a:visited {
+   color: rgb(239, 220, 156);
+}
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color: rgb(71, 52, 29);
