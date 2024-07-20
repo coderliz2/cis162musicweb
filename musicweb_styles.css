@@ -1,0 +1,31 @@
+body{
+    background-color:blanchedalmond;
+    font-family:verdana, sans-serif;
+}
+
+header{background-color:darkblue;
+}
+
+h1{color: white;
+text-align: center;}
+
+p{
+    text-align-last: center;
+}
+
+nav > ul {line-height:2em;
+list-style-type:none;
+padding-left:5px;}
+
+section {
+    background-color:darkblue;
+    font-family:verdana;
+    color:white;
+    font-size:20px;
+}
+
+footer{
+    background-color:darkblue;
+    font-family:verdana;
+    color:white;
+}
