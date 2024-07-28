@@ -4,20 +4,30 @@
     <title>About Radio Rocks</title>
     <link href="musicweb_styles.css" rel="stylesheet">
     <link href="musicwebgrids.css" rel="stylesheet">
-    <!--
-        New Perspectives on HTML5 and CSS3, 8th Edition
-        Tutorial 3
-        Tutorial Case
-        
-        About Pandaisia Chocolates Page
-        Author: 
-        Date:   
     
-        Filename: pc_about.html
-     -->
     <meta charset="utf-8">
-    
-    <style>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+        
 ul {
   list-style-type: none;
   margin: 0;
@@ -33,7 +43,7 @@ ul {
     li a {
   display: block;
   padding: 8px;
-  background-color: #ADD8E6;
+  background-color: #000000;
 }
 
 li a:hover {
@@ -50,40 +60,41 @@ li a:hover {
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
 }
-
-</style>
-
     
-    
-
+    </style>
+    </head>
 <body>
+
    <header>
        <img src="coollogo_com-231121909.png" alt="Radio Rocks">
        <nav class="horizontalNavigation">
           <ul>
              <li><a href="index.html">Home</a></li>
-             <li><a href="#">RnB/Hip-Hop</a></li>
+             <li><a href="RnBHip-Hop.html">RnB/Hip-Hop</a></li>
              <li><a href="Pop.html">Pop</a></li>
              <li><a href="ClassicRock.html">Classic Rock</a></li>
              <li><a href="AlternativeRock.html">Alternative Rock</a></li>
           </ul>
        </nav>
        <h1>RnB and Hip-Hop</h1>
-        <img src="pexels-aleksandr-neplokhov-486399-1238980.jpg" alt="rnbartists" class="center"/>
+       <img src="rnb.jpg" alt="rnbartists" class="center"/>
     </header>
-    
+
     <article>
        <h2>What is RnB and Hip-Hop?</h2>
        <!--<img src="pc_photo6.png" alt="" />-->
-       <p>RnB, or Rhythm and Blues, is a genre of music that originated within African-American communities in the 1940s. It combines elements of pop, gospel, blues, and jazz with a strong back beat. Some examples of popular RnB artists include Usher, Frank Ocean, Alicia Keys, and Beyoncé. Hip-Hop is closely related to RnB, but still has its own category. It is also known as rap and it is a genre of popular music that originated in the early 1970s from the African American community. Some examples of popular Hip-Hop artists include Jay-Z, Kanye West, Kendrick Lamar, Drake, and Eminem.
+       <p>RnB, or Rhythm and Blues, is a genre of music that originated within African-American communities in the 1940s. It combines elements of pop, gospel, blues, and jazz with a strong back beat. Some examples of popular RnB artists include Usher, Frank Ocean, Alicia Keys, and Beyoncé.Hip-Hop is closely related to RnB, but still has its own category. It is also known as rap and it is a genre of popular music that originated in the early 1970s from the African American community. Some examples of popular Hip-Hop artists include Jay-Z, Kanye West, Kendrick Lamar, Drake, and Eminem.
 </p>
        <p></p>
    </article>
+    
+    
    
   <section>
    <h2>Section Title</h2>
+      <p>Some RnB and Hip-Hop Artists!!</p>
    <article>
-      <h2>Title 1</h2>
+      <h2>Justin Bieber</h2>
       <p>Content</p>
        <div class="gallery">
   <a target="_blank" href="JustinBieber.jpg">
@@ -93,7 +104,7 @@ li a:hover {
 </div>
    </article>
    <article>
-      <h2>Title 2</h2>
+      <h2>Taylor Swift</h2>
       <p>Content</p>
     <div class="gallery">
   <a target="_blank" href="TaylorSwift.jpg">
@@ -103,7 +114,7 @@ li a:hover {
 </div>
    </article>
    <article>
-      <h2>Title 3</h2>
+      <h2>Harry Styles</h2>
       <p>Content</p>
        <div class="gallery">
   <a target="_blank" href="HarryStyles.jpg">
@@ -113,7 +124,7 @@ li a:hover {
 </div>
    </article>
    <article>            
-      <h2>Title 4</h2>
+      <h2>Billie Eilish</h2>
       <p>Content</p>
        <div class="gallery">
   <a target="_blank" href="BillieEilish.jpg">
@@ -164,23 +175,23 @@ li a:hover {
 <label for="Hip-Hop">Hip-Hop</label><br>
 <input type="radio" id="Pop" name="fav_genre" value="Pop">
 <label for="Pop">Pop</label><br>
-<input type="radio" id="Classic Rock" name="fav_genre" value="Classic Rock">
-<label for="Classic Rock">Classic Rock</label><br>
-<input type="radio" id="Alternative Rock" name="fav_genre" value="Alternative Rock">
-<label for="Alternative Rock">Alternative Rock</label><br>
+<input type="radio" id="Classic_Rock" name="fav_genre" value="Classic Rock">
+<label for="Classic_Rock">Classic Rock</label><br>
+<input type="radio" id="Alternative_Rock" name="fav_genre" value="Alternative_Rock">
+<label for="Alternative_Rock">Alternative Rock</label><br>
            
 
 <label for="genre">What genre do you want to get more recommendations on?</label><br>
-<input type="radio" id="RnB" name="fav_genre" value="RnB">
-<label for="RnB">RnB</label><br>
-<input type="radio" id="Hip-Hop" name="fav_genre" value="Hip-Hop">
-<label for="Hip-Hop">Hip-Hop</label><br>
-<input type="radio" id="Pop" name="fav_genre" value="Pop">
-<label for="Pop">Pop</label><br>
-<input type="radio" id="Classic Rock" name="fav_genre" value="Classic Rock">
-<label for="Classic Rock">Classic Rock</label><br>
-<input type="radio" id="Alternative Rock" name="fav_genre" value="Alternative Rock">
-<label for="Alternative Rock">Alternative Rock</label><br>
+<input type="radio" id="RnBg" name="fav_genre" value="RnBg">
+<label for="RnBg">RnB</label><br>
+<input type="radio" id="Hip-Hopg" name="fav_genre" value="Hip-Hopg">
+<label for="Hip-Hopg">Hip-Hop</label><br>
+<input type="radio" id="Popg" name="fav_genre" value="Popg">
+<label for="Popg">Pop</label><br>
+<input type="radio" id="Classic_Rockg" name="fav_genre" value="Classic_Rockg">
+<label for="Classic_Rockg">Classic Rock</label><br>
+<input type="radio" id="Alternative_Rockg" name="fav_genre" value="Alternative_Rockg">
+<label for="Alternative_Rockg">Alternative Rock</label><br>
            
 <input type="submit" value="Submit">
 <input type="reset" value="Reset">
